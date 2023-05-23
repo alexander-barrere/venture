@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Using a different font can change the feel of your site */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* A light grey background can be easier on the eyes */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white; /* Containers with a white background can help content stand out on the grey page background */
+  border-radius: 5px; /* Rounded corners can give a softer, more modern look */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* A subtle shadow can give the illusion of depth */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #333;
+  font-weight: 600; /* Making headers a bit heavier can make them stand out more */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  margin-bottom: 10px;
+  line-height: 1.5; /* Adding a bit more space between lines can improve readability */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.selected {
+  background-color: #007bff; /* Changing the selection color to match the link color can give a more consistent feel */
+  color: white; /* White text on the blue background will be more readable */
+}
+
+.episode-details {
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 20px auto; /* centers the card and adds some space above and below */
 }
